@@ -17,3 +17,16 @@
 // "bootstrap-sprockets" must be imported before "bootstrap" and "bootstrap/variables"
 @import "bootstrap-sprockets";
 @import "bootstrap";
+
+.avatar-small {
+    width: 30px;
+}
+.avatar-medium {
+    width: 50px;
+}
+.avatar-large {
+    width: 70px;
+}
+.avatar-full {
+    width: 100%;
+}
