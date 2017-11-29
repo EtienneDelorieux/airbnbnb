@@ -15,3 +15,8 @@
 //= require turbolinks
 //= require_tree .
 //= require bootstrap-sprockets
+//= require toastr
+
+toastr.options = {
+    "positionClass":"toast-bottom-right"
+}
