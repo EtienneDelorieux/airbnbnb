@@ -32,6 +32,7 @@ gem 'rails-i18n'
 
 # Paperclip
 gem 'paperclip'
+gem 'paperclip-cloudinary'
 
 gem 'toastr-rails'
 
