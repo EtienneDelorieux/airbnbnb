@@ -7,7 +7,8 @@
             <%= form_for @room, html: {multipart: true} do |f| %>
             
                 <%= render 'shared/errors' %>
-            
+                
+                <!-- Type d'habitation -->
                 <div class="row">
                     <div class="col-md-4 select">
                         <div class="form-group">
@@ -47,6 +48,7 @@
                     </div>
                 </div>
                 
+                <!-- Nombre de chambres -->
                 <div class="row">
                     <div class="col-md-4 select">
                         <div class="form-group">
@@ -73,6 +75,7 @@
                     </div>
                 </div>
                 
+                <!-- Nom du logement -->
                 <div class="row">
                     <div class="form-group">
                         <label>Nom du logement</label>
@@ -80,6 +83,7 @@
                     </div>
                 </div>
                 
+                <!-- Description du logement -->
                 <div class="row">
                     <div class="form-group">
                         <label>Description de votre logement</label>
@@ -87,6 +91,7 @@
                     </div>
                 </div>
                 
+                <!-- Adresse -->
                 <div class="row">
                     <div class="form-group">
                         <label>Adresse</label>
@@ -94,6 +99,7 @@
                     </div>
                 </div>
                 
+                <!-- Télécharger les photos -->
                 <div class="row">
                     <div class="col-md-4">
                         <div class="form-group">
@@ -109,6 +115,7 @@
                     <%= render 'photos/list' %>
                 </div>
                 
+                <!-- Equipements -->
                 <div class="row">
                     <div class="col-md-4">
                         <div class="form-group">
@@ -139,7 +146,8 @@
                         </div>
                     </div>
                 </div>
-                    
+                
+                <!-- Prix par nuit -->
                 <div class="row">
                     <div class="col-md-4">
                         <div class="form-group">
@@ -152,6 +160,7 @@
                     </div>
                 </div>
                 
+                <!-- Annonce active -->
                 <div class="row">
                     <div class="form-group">
                         <%= f.check_box :active %>Annonce active
