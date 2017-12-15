@@ -58,7 +58,7 @@
           </div>
           <% end %>
           
-          <% unless current_user.confirmed_at? %>
+          <% unless current_user.confirmesd_at? %>
             <br>
             <br>
             <%= form_for(resource, as: resource_name, url: confirmation_path(resource_name), html: {method: :post}) do |f| %>
