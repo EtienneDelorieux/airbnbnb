@@ -3,7 +3,8 @@ Rails.application.routes.draw do
                :path => '', 
                :path_names => {:sign_in => 'login', :sign_out => 'logout', :edit => 'profile'},
                :controllers => {:registrations => 'registrations',
-                                :confirmations => 'confirmations'
+                                :confirmations => 'confirmations',
+                                :omniauth_callbacks => 'omniauth_callbacks'
                }
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
