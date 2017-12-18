@@ -14,6 +14,7 @@
         <div class="row">
             
             <div class="col-md-8">
+                
                 <div class="row">
                     
                     <div class="col-md-3 text-center">
@@ -57,6 +58,44 @@
                     </div>
                     
                 </div>
+                
+                <!-- Description -->
+                <div class="row">
+                    <div class="col-md-12">
+                        <h2>À propos de ce logement</h2>
+                        <p><%= @room.summary %></p>
+                        <br>
+                    </div>
+                </div>
+                
+                
+                
+                <!-- Équipements -->
+                <div class="row">
+                    <div class="col-md-2">
+                        <p>Équipements</p>
+                    </div>
+                    <div class="col-md-10">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <ul class="equipements">
+                                    <li class="<%= 'text-line-through' if !@room.is_wifi %>">Wifi</li>
+                                    <li class="<%= 'text-line-through' if !@room.is_tv %>">Télévision</li>
+                                    <li class="<%= 'text-line-through' if !@room.is_closet %>">Penderie</li>
+                                    <li class="<%= 'text-line-through' if !@room.is_shampoo %>">Shampoing</li>
+                                </ul>
+                            </div>
+                            <div class="col-md-6">
+                                <ul class="equipements">
+                                    <li class="<%= 'text-line-through' if !@room.is_kitchen %>">Cuisine</li>
+                                    <li class="<%= 'text-line-through' if !@room.is_breakfast %>">Petit déjeuner</li>
+                                    <li class="<%= 'text-line-through' if !@room.is_heat %>">Chauffage</li>
+                                    <li class="<%= 'text-line-through' if !@room.is_air %>">Climatisation</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
             
             <div class="col-md-4">
@@ -66,41 +105,8 @@
             
         </div>
         
-        <!-- Description -->
-        <div class="row">
-            <div class="col-md-12">
-                <h2>À propos de ce logement</h2>
-                <p><%= @room.summary %></p>
-                <br>
-            </div>
-        </div>
-        
-        <!-- Équipements -->
-        <div class="row">
-            <div class="col-md-2">
-                <p>Équipements</p>
-            </div>
-            <div class="col-md-10">
-                <div class="row">
-                    <div class="col-md-6">
-                        <ul class="equipements">
-                            <li class="<%= 'text-line-through' if !@room.is_wifi %>">Wifi</li>
-                            <li class="<%= 'text-line-through' if !@room.is_tv %>">Télévision</li>
-                            <li class="<%= 'text-line-through' if !@room.is_closet %>">Penderie</li>
-                            <li class="<%= 'text-line-through' if !@room.is_shampoo %>">Shampoing</li>
-                        </ul>
-                    </div>
-                    <div class="col-md-6">
-                        <ul class="equipements">
-                            <li class="<%= 'text-line-through' if !@room.is_kitchen %>">Cuisine</li>
-                            <li class="<%= 'text-line-through' if !@room.is_breakfast %>">Petit déjeuner</li>
-                            <li class="<%= 'text-line-through' if !@room.is_heat %>">Chauffage</li>
-                            <li class="<%= 'text-line-through' if !@room.is_air %>">Climatisation</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
+        <br>
+        <hr>
         
         <!-- Carousel -->
         <div class="row">
