@@ -244,7 +244,8 @@ input[type="checkbox"]:checked:before {
     margin-bottom: 10px;
 }
 
-#message {
+#message,
+#stripe {
     color: #ff0000;
     display: block;
     text-align: center;
