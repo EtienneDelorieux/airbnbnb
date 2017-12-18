@@ -4,7 +4,7 @@ Devise.setup do |config|
   
   case Rails.env
   when "development"
-    config.omniauth :facebook, '147349482582866', '9f1a00d9e032fe6a9d4b2babc6aae47b', scope:"email", info_fields:'email,name'
+    config.omniauth :facebook, '1952898431601556', '52ecda4fd36d45b8d58a32b53101921a', scope:"email", info_fields:'email,name'
   when "production"
     config.omniauth :facebook, ENV['FACEBOOK_KEY'], ENV['FACEBOOK_SECRET'], scope:"email", info_fields:'email,name'
   end
